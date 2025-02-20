@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+           
+            /*
+            ESSE E O CODIGO QUE CENTRALISA A MARGEM
+             margin: auto;
+            */
+
+            outline-style: dashed;
+            outline-width: 5px;
+            outline-color: salmon;
+            /*
+            esse e um trasejado perdo da margem, ele se regula de acordo com a margem
+            */
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level </h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a>. vamos ver como isso tudo funciona</p>
+</body>
+</html>

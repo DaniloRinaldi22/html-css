@@ -1,0 +1,4 @@
+iconarchive e um site que tem muitos icones
+salve o icones no "ico"
+favicon.cc e um site que vc cria um icone
+favicon.io vc transfoma coisas em icones

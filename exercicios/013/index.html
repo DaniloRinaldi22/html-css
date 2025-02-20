@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Reproduzir audio </h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/Immortal - NEFFEX.mp3" controls autoplay></audio>
+    <!--nesse caso de cima o autoplay nn funciona-->
+    <audio preload="metadata" controls loop> 
+ <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+ <source src="midia/guanacast-33.ogg" type="audio/ogg">
+ <source src="midia/guanacast-33.wav" type="audio/wav">
+ <p>Infelismente seu navegadar nao consegui reproduzir audio. <a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo mp3</a></p> 
+ <!--O mp3 carrega primeiro que o ogg e o wav vem em ultimo, ou seja o mp3 carrega primeiro e a ordem desses 3 importa e o mp3 e mais leve e recomendado usar ele-->
+    </audio>
+</body>
+</html>

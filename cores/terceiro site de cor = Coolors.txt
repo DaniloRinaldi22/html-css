@@ -1,0 +1,2 @@
+E como se fosse um explorar e mostra varias paletas de cores;
+dentro do site vc pode bloquear as paletas que gostou e mudar as outras

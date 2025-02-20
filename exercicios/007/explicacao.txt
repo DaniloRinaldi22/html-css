@@ -1,0 +1,3 @@
+html= significado, semantica (mostra mais dq fala)
+css= estilo e estetica
+java= animacao
