@@ -1,0 +1,2 @@
+../ (volteb uma pasta)
+./ (nesta pasta)

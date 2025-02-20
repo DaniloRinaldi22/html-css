@@ -1,0 +1,2 @@
+PNG= Imagen que tem fundo transparente e com a qualidade um pouco maior. Posso usar imagem de fundo.
+JPEG= Imagens que a compaquitacao e mais importante, se vc der zoom a imagem fica contorcida e nao posso usar nada no fundo.
