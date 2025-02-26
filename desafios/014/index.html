@@ -10,52 +10,100 @@
         }
 
         table {
+            border-collapse: collapse;
             width: 300px;
         }
 
-        tr {
+        th, tr {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
         }
+
+        p {
+            background-color: gray;
+            color: white;
+            
+        }
     </style>
 </head>
 <body>
+
     <table>
         <thead>
 
-    <th rowspan="2">Area</th>
-    <th rowspan="2">Disciplina</th>
-    <th colspan="2">notas</th>
-    <th rowspan="2">Media</th>
-    <th>Notas 1</th>
-    <th>Notas 2</th>
-
+    
+        <th rowspan="2" colspan="2">Area</th>
+        <th rowspan="2" colspan="2">Disciplina</th>
+        <th colspan="2">notas</th>
+        
+        <th rowspan="2">Media</th>
+        <th>Notas 1</th>
+        <th>Notas 2</th>
+    
         </thead>
 
         <tbody>
+           
             <tr>
-                <td>Exatas</td>
-                <td> Matematica</td>
+                <th rowspan="4">Exatas</th>
+                <th> Matematica</th>
                 <td>10</td>
                 <td>10</td>
                 <td>10</td>
             </tr>
 
             <tr>
-                <td>Fisica</td>
+                <th>Fisica</th>
                 <td>9</td>
                 <td>9</td> 
                 <td>10</td>
             </tr>
 
+            <tr>
+                <th>Quimica</th>
+                <td>10</td>
+                <td>8</td> 
+                <td>9</td>
+            </tr>
 
+            <tr>
+                <th>Biologia</th>
+                <td>10</td>
+                <td>9</td> 
+                <td>9.5</td>
+            </tr>
+
+            
+                <tr>
+                    <th colspan="4">Media De Exatas</th>
+                    <td>0000</td>
+                </tr>
+          
+
+            <tr>
+                <th>Historia</th>
+                <td>10</td>
+                <td>9</td> 
+                <td>9.5</td>
+            </tr>
+
+            <tr>
+                <th>Geografia</th>
+                <td>10</td>
+                <td>10</td> 
+                <td>10</td>
+            </tr>
+
+           
+                <tr>
+                    <th colspan="4">Media De Humanas</th>
+                    <td>9.5</td>
+                </tr>
+            
         </tbody>
 
-        <tfoot>
-            <th>Media De Humanas</th>
-            <tr>0.0</tr>
-        </tfoot>
+        
     </table>
 </body>
 </html>
