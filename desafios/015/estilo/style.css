@@ -31,13 +31,30 @@ section#telefone {
 
     height: 627px;
     width: 311px;
-    background: url('') no-repeat;
+    background: url('../imagens/frame-iphone.png') no-repeat;
     
 }
 
 iframe#tela {
-    top: 80px;
+    bottom: 100px;
     left: 22px;
-    width: 269px;
-    height: 471px;
+    width: 269px; 
+    height: 539px;
+}
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2ppx 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform .1.5s, border 0.5s ;
 }
