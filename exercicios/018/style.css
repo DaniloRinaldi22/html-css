@@ -28,5 +28,6 @@ color: #125189;
 }
 
 p {
+    text-indent: 10px;
     text-align: justify;
 }
