@@ -1,23 +1,53 @@
-<div class="container mt-4">
-    <h2>{{ produto.id ? 'Editar Produto' : 'Cadastrar Produto' }}</h2>
-    <form (ngSubmit)="salvarProduto()">
-    <div class="mb-3">
-    <label class="form-label">Nome do Produto</label>
-    <input type="text" class="form-control" [(ngModel)]="produto.produto" name="produto" required>
-    </div>
-    <div class="mb-3">
-    <label class="form-label">Descrição</label>
-    <textarea class="form-control" [(ngModel)]="produto.descricao" name="descricao" required></textarea>
-    </div>
-    <div class="mb-3">
-    <label class="form-label">Foto (Nome do Arquivo)</label>
-    <input type="text" class="form-control" [(ngModel)]="produto.foto" name="foto" required>
-    </div>
-    <div class="mb-3">
-    <label class="form-label">Preço</label>
-    <input type="number" class="form-control" [(ngModel)]="produto.preco" name="preco" required>
-    </div>
-    <button type="submit" class="btn btn-success">{{ produto.id ? 'Atualizar' : 'Cadastrar' }}</button>
-    <a routerLink="/painel-principal" class="btn btn-secondary">Cancelar</a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iestado">
+
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">Sao paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="Ma">Maranhao</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <P>
+            <label for="iprof">Profissao:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administracao</option>
+                <option value="CONT">contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </P>
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"> </textarea>
+            <!--Voce so pode enviar os dados se usar o post la em cima-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
-    </div>
+</body>
+</html>
